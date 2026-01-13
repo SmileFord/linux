@@ -59,7 +59,7 @@
 #include <mali_kbase_config_defaults.h>
 #define MALI_MAX_DEFAULT_FIRMWARE_NAME_LEN ((size_t)64)
 
-#define DEFAULT_FW_NAME MALI_RELEASE_NAME".mali_csffw.bin"
+#define DEFAULT_FW_NAME "mali_csffw.bin"
 
 static char default_fw_name[MALI_MAX_DEFAULT_FIRMWARE_NAME_LEN] = DEFAULT_FW_NAME;
 module_param_string(fw_name, default_fw_name, sizeof(default_fw_name), 0644);
