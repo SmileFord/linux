@@ -1,0 +1,101 @@
+/dts-v1/;
+/plugin/;
+
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/pinctrl/rockchip.h>
+
+&{/} {
+    edp0_sound: edp0-sound {
+        compatible = "simple-audio-card";
+        simple-audio-card,name = "rockchip-edp0-sound";
+
+        simple-audio-card,cpu {
+            sound-dai = <&spdif_tx4>;
+        };
+
+        simple-audio-card,codec {
+            sound-dai = <&edp0 1>;
+        };
+    };
+};
+
+&pinctrl {
+    edp {
+        edp0_hpd: edp0-hpd {
+            rockchip,pins = <3 RK_PD4 RK_FUNC_GPIO &pcfg_pull_none>;
+        };
+    };
+};
+
+&edp1_sound {
+    status = "disabled";
+};
+
+&edp1 {
+    status = "disabled";
+};
+
+&{/dp-con} {
+                status = "disbaled";
+};
+
+&hdmi0_sound {
+        status = "disbaled";
+};
+
+
+&edp0_in_vp0 {
+        status = "okay";
+};
+
+&edp1_in_vp2 {
+        status = "disbaled";
+};
+
+&hdmi0 {
+        status = "disbaled";
+};
+
+&hdmi0_in_vp0 {
+        status = "disbaled";
+};
+
+&hdptxphy_hdmi0 {
+        status = "disbaled";
+};
+
+
+&edp1 {
+        status = "disabled";
+};
+
+&hdptxphy1 {
+        status = "disbaled";
+};
+
+&hdptxphy0 {
+        status = "okay";
+};
+
+&route_hdmi0 {
+        status = "disbaled";
+};
+
+&route_edp0 {
+        status = "okay";
+        connect = <&vp0_out_edp0>;
+};
+
+&edp0 {
+        pinctrl-names = "default";
+        pinctrl-0 = <&edp0_hpd>;
+	force-hpd;
+        hpd-gpios = <&gpio3 RK_PD4 GPIO_ACTIVE_HIGH>;
+        data-lanes = <2 1 0 3>;
+        #sound-dai-cells = <1>;
+        status = "okay";
+};
+
+&route_edp1 {
+        status = "disbaled";
+};
