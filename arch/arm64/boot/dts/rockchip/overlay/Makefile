@@ -75,6 +75,7 @@ dtbo-$(CONFIG_ARCH_ROCKCHIP) += \
 	mixtile-core3588e-40pins.dtbo \
 	mixtile-core3588e-rpi-camera-v2-on-cam0.dtbo \
 	mixtile-core3588e-rpi-camera-v2-on-cam1.dtbo \
+	mixtile-core3588e-ov5640-on-cam0.dtbo \
 	radxa-zero3-rpi-camera-v2.dtbo \
 	radxa-zero3-rpi-camera-v1.3.dtbo \
 	radxa-zero3-external-antenna.dtbo \
