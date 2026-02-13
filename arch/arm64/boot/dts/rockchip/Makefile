@@ -428,6 +428,7 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-som3588-cat.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-smart-am60.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-turing-rk1.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-mixtile-core3588e.dtb
+dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-mixtile-core3588e-v2-nano.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-toybrick-x0-android.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-toybrick-x0-linux.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-vehicle-evb-v10.dtb
