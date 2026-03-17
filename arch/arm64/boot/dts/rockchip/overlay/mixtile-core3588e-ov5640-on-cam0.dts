@@ -103,8 +103,9 @@
                                 port {
                                         ucam_out: endpoint {
                                                 remote-endpoint = <&mipi_in_ucam>;
-						bus-type = <4>;
+                                                bus-type = <4>;
                                                 data-lanes = <1 2>;
+                                                clock-noncontinuous;
                                         };
                                 };
                         };
