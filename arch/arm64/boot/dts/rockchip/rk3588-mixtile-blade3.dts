@@ -20,8 +20,8 @@
 #include "rk3588-linux.dtsi"
 
 / {
-	model = "Mixtile Blade 3 v1.0.1";
-	compatible = "rockchip,rk3588-blade3-v101-linux", "rockchip,rk3588";
+	model = "Mixtile Blade 3";
+	compatible = "rockchip,rk3588-mixtile-blade3", "rockchip,rk3588";
 	/delete-node/ chosen;
 
 	/* If hdmirx node is disabled, delete the reserved-memory node here. */
